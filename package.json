@@ -1,0 +1,26 @@
+{
+  "name": "xyca",
+  "version": "1.0.0",
+  "description": "simple backend to serve some text based on the endpoints",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lorenzgerber/xyca.git"
+  },
+  "keywords": [
+    "nodejs",
+    "virus"
+  ],
+  "author": "Lorenz Gerber",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/lorenzgerber/xyca/issues"
+  },
+  "homepage": "https://github.com/lorenzgerber/xyca#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
