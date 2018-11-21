@@ -1,9 +1,9 @@
 var express = require('express');
 var app = express();
 
-var sequences = require('./sequences.js');
+var sequence = require(__dirname + '/app/sequence.js');
 
-app.use('/sequences/', sequences);
+app.use('/sequence/', sequence);
 
 /*app.get('/:id', function(req, res){
    res.send('The id you specified is ' + req.params.id);
