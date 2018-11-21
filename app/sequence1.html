@@ -2,27 +2,29 @@
 <header><title>This is title</title></header>
 <script type="text/javascript">
     
-    
-    window.onload = function () {
-        var text = "Result of Analysis... TCT   CAT   AAT";
+    var consoleTyper = function(textId, text){
         var i = 0;
-
-        var consoleTyper = setInterval(function () {
+        setInterval(function () {
             if (i != text.length) {
                 i += 1;
-                document.getElementById("text").innerHTML = text.substr(0, i);
+                document.getElementById(textId).innerHTML = text.substr(0, i);
             } else
             {
                 clearInterval(consoleTyper);   
             }
 
             console.log(i);
-        }, 50);
+        }, 50); 
+    }
+    
+    window.onload = function () {
+        var text1 = "Starting Analysis... ...running... ...running... ...running... ...finished... ...Result of Analysis: TCT   CAT   AAT";
+        consoleTyper('text1', text1);
     };
 </script>
 <body>  
     <font size="+10">
-    <div id="text"></div>
+    <div id="text1"></div>
     </font>
 </body>
 
