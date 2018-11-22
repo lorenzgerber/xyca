@@ -11,7 +11,6 @@ RUN useradd -m -u $UID -g $GID -o -s /bin/bash $UNAME
 USER $UNAME
 WORKDIR /home/$UNAME/
 RUN mkdir app
-RUN mkdir images
 
 COPY app/* ./app/
 COPY index.js ./
