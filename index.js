@@ -3,7 +3,7 @@ var app = express();
 
 var sequence = require(__dirname + '/app/sequence.js');
 
-app.use('/sequence/', sequence);
+app.use('/sequences/', sequence);
 
 /*app.get('/:id', function(req, res){
    res.send('The id you specified is ' + req.params.id);
