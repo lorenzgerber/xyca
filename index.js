@@ -11,5 +11,6 @@ app.use('/sequences/', sequence);
 
  
 app.listen(8000, function (){
+    app.use(express.static(__dirname + '/app'));
     console.log('Express server listening on port 8000');
 });
